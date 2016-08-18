@@ -1,201 +1,150 @@
+
 * {
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
-  -moz-box-sizing: border-box;
- 
-}
-body {
-  width: 1366px;
-  height: 950px;
-  margin-left: auto;
-  margin-right: auto;
-  font-family: OpenSans,Arial,sans-serif;
-  background-color: #ffffff;
- }
-
-h1 {
-  font-size: 46px;
-  font-weight: normal;
-  font-family: OpenSans, Arial, sans-serif;
-  padding-left: 40px;
-  margin-top: 40px;
-  margin-bottom: 30px;
+       margin: 0;
+       padding: 0;
 }
 
-.nav_head {
-    list-style-type: none;
-    overflow: hidden;
-    margin-left: 40px;
-    margin-bottom: 40px;
-    margin-right: 48px;
-    background-image:linear-gradient(to top,#444343 0%, #5e5e5e 100%);
-     background-image:-moz-linear-gradient(to top,#444343 0%, #5e5e5e 100%);
-     background-image:-webkit-linear-gradient(to top,#444343 0%, #5e5e5e 100%);
-     background-image:-o-linear-gradient(to top,#444343 0%, #5e5e5e 100%);
-     background-image:-ms-linear-gradient(to top,#444343 0%, #5e5e5e 100%);
+.body {
+	background: #f9f9f9;
 }
 
-.nav_head li {
-    float: left;
-    font-size: 15px;
-    line-height: 29px;
-}
-
-.nav_head li a {
-    display: block;
-    color: white;
-    text-align: center;
-    padding: 6px 40px;
-    text-decoration: none;
-
-
-}
-
-.nav_head li a:hover:not(.active) {
-    background-color: #333333;
+.wrapper {
+	margin: 0 auto;
+	padding: 0 46px;
+	width: 1060px;
+	background: #fff;
+	box-shadow: 0px 0px 4px 0px rgba(153,153,153,1);
+	font-family: Arial, sans-serif;
 }
 
 
- .nav_head .active {
-   background-color: white;
-   padding-right: 10px;
-   padding-left: 10px;
-   width: 100px;
-   border-right: 1px solid white;
-   border-left: 1px solid white;
-    background-image:linear-gradient(to top,#2e2e2e 0%, #4a4a4a 100%);
-    background-image:-moz-linear-gradient(to top,#2e2e2e 0%, #4a4a4a 100%);
-    background-image:-webkit-linear-gradient(to top,#2e2e2e 0%, #4a4a4a 100%);
-    background-image:-o-linear-gradient(to top,#2e2e2e 0%, #4a4a4a 100%);
-    background-image:-ms-linear-gradient(to top,#2e2e2e 0%, #4a4a4a 100%);
+.header {
+	padding-top: 50px;
+}
+
+.menu_nav { 
+	position: relative;
+	overflow: hidden;
+	margin-top: 40px;
+	background: #5e5e5e; 
+	background: -moz-linear-gradient(top,  #5e5e5e 0%, #444343 100%); 
+	background: -webkit-linear-gradient(top,  #5e5e5e 0%,#444343 100%); 
+	background: -o-linear-gradient(top,  #5e5e5e 0%,#444343 100%); 
+	background: -ms-linear-gradient(top,  #5e5e5e 0%,#444343 100%); 
+	background: linear-gradient(to bottom,  #5e5e5e 0%,#444343 100%); 
+}
+
+.menu_nav li {
+	float: left;
+	text-align: center;
+	padding: 10px 40px 12px 30px;
+        list-style: none;
+}
+
+.menu_nav a {
+        font-family: 'Open sans',Arial,sans-serif;
+	text-decoration: none;
+	color: white;
+        font-size: 15px;
+        text-shadow: 0.5px 0.9px 1px rgba(0,0,0,0.5);
+}
+
+.menu_nav li:nth-child(3) {
+padding-left: 70px;
+}
+
+.menu_nav li:nth-child(4) {
+padding-left: 70px;
+}
+
+.menu_nav li:hover {
+	background: #3a3a3a;
+	box-shadow: 0 1px 0 1px #c8c8c8;
 }
 
 
-.nav_head .first {
-  width: 146px;
+.main {
+	position: relative;
+	overflow: hidden;
+	margin-top: 40px;
 }
 
-
-.nav_aside {
-  float: left;
+.sidebar {
+	float: left;
+	width: 240px;
 }
 
-
-.nav_aside ul {
-    background-color: #f1f1f1;
-    overflow: auto;
+.sidebar_menu {
+	font-size: 13px;
+        font-family: 'Open sans',Arial,sans-serif;
+	border-left: 1px solid #c8c8c8;
+	border-right: 1px solid #c8c8c8;
+	border-bottom: 1px solid #c8c8c8;
 }
 
-.nav_aside li a {
-    display: block;
-    color: #000;
-    padding: 12px 20px;
-    text-decoration: none;
-    width: 241px;
-    height: 42px;
-  
+.sidebar_menu li {	
+	border-top: 1px solid #c8c8c8;
+	padding-left: 24px;
 }
 
-
-.nav_aside li {
-  margin-left: 42px;
-  list-style-type: none;
-  border: 1px solid #c8c8c8;
-  margin-bottom: -1px;
-  font-size: 13px;
-  color: #2c2c2c;
-  vertical-align: center;
+.sidebar_menu a {
+        text-decoration: none;
+	color:#656363;	
+	line-height: 38px;
 }
 
-
-.nav_aside .act {
-  padding-left: 40px;
-  background-color: #f9f9f9;
+.sidebar_menu li:hover {
+	padding-left: 38px;
+        background-color: #f9f9f9;
 }
 
-
-img {
-  float: right;
-  border: 1px solid #c7c7c7;
-  margin-right: 48px;
-  width: 678px;
-  height: 400px;
+.photo  {
+	float: right;
+	width: 680px;
 }
 
-
-
-.container {
-  margin-left: 157px;
-  margin-right: 157px;
-  border: 1px solid #c9c9c9;
-  height: 950px;
-  box-shadow: 2px 18px 5px 159px rgba(247,247,247,1);
+.photo img{
+	text-align: center;
+	border: 1px solid #c8c8c8;
 }
 
-
-.section p {
- float: right;
- margin-right: 30px;
- font-family:OpenSans,Arial, sans-serif; 
- font-size: 13px;
- line-height: 21px;
- font-weight: normal;
- padding-top: 40px;
- padding-left: 350px;
- padding-right: 55px;
+.info {
+	padding: 30px 16px 0 16px;
+	color: #2c2c2c;
+        font-family: 'Open sans',Arial,sans-serif;
+	font-size: 13px;
+	line-height: 20px;
 }
 
-
-.foot {
-  height: 40px;
-  list-style-type: none;
-  position: absolute;
-  bottom: 60px;
-  left: 440px;
-  font-size: 14px;
-  background-color: #e0e0e0;
+.footer {
+	padding: 50px 0; 
 }
 
-.foot {
-    background-image: linear-gradient(to top, #e1e1e1 0%, #e1e1e1 100%);
-    background-image:-moz-linear-gradient(to top, #e1e1e1 0%, #e1e1e1 100%);
-    background-image:-webkit-linear-gradient(to top, #e1e1e1 0%, #e1e1e1 100%);
-    background-image:-o-linear-gradient(to top, #e1e1e1 0%, #e1e1e1 100%);
-    background-image:-ms-linear-gradient(to top, #e1e1e1 0%, #e1e1e1 100%);
+.footer_menu {
+        position: relative;
+	overflow: hidden;
+	background: #e1e1e1;
 }
 
-.foot li {
-  display: inline;
-  float: left;
-  font-size: 13px;
-  font-family: OpenSans,Arial,sans-serif;
-
+.footer_menu li {
+	display: inline;
+	list-style: none;
+	line-height: 40px;
 }
 
-.foot li a {
-    display: block;
-    color: black;
-    text-align: center;
-    padding: 12px 20px;
-    text-decoration: none;
-    padding-right: 80px; 
+.footer_menu a {
+	text-decoration: none;
+	padding: 0 50px;
+	color: #2c2c2c;
+	font-size: 13px;
 }
 
-.foot .last {
-  padding-left: 148px;
+.footer_menu a:hover {
+	text-decoration: underline;
 }
 
-.foot .checked {
-  text-decoration: underline;
+.finish {
+	padding-right: 28px;
+	float: right;
+        font-size: 13px;
 }
-
-
-
-
-
-
-
-
-
-
